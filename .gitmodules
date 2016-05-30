@@ -1,0 +1,12 @@
+[submodule "sleuthkit"]
+	path = sleuthkit
+	url = git@github.com:mvetsch/sleuthkit
+[submodule "Autopsy"]
+	path = Autopsy
+	url = git@github.com:mvetsch/Autopsy
+[submodule "modules/Autopsy-AuthentiCodeVerification"]
+	path = modules/Autopsy-AuthentiCodeVerification
+	url = git@github.com:mvetsch/Autopsy-AuthentiCodeVerification
+[submodule "modules/VirusTotalOnlineChecker"]
+	path = modules/VirusTotalOnlineChecker
+	url = git@github.com:mvetsch/VirusTotalOnlineChecker
