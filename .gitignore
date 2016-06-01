@@ -1,0 +1,4 @@
+*.deb
+
+autopsy-package/*
+!autopsy-package/DEBIAN

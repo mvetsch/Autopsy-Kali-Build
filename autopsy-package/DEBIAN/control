@@ -1,0 +1,9 @@
+Package: autopsy4
+Priority: optional
+Section: forensic
+Version: 4.0
+Architecture: amd64
+Maintainer: Mathias Vetsch <mvetsch@hsr.ch>
+Depends: git
+Description: Autopsy Forensic tool
+

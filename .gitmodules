@@ -10,3 +10,6 @@
 [submodule "modules/VirusTotalOnlineChecker"]
 	path = modules/VirusTotalOnlineChecker
 	url = git@github.com:mvetsch/VirusTotalOnlineChecker
+[submodule "Autopsy-AuthentiCodeVerification"]
+	path = Autopsy-AuthentiCodeVerification
+	url = git@github.com:mvetsch/Autopsy-AuthentiCodeVerification
