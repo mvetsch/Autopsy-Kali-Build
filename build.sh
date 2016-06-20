@@ -23,12 +23,22 @@ cp -v  sleuthkit/bindings/java/dist/Tsk_DataModel.jar $TSK_HOME/bindings/java/di
 
 cd Autopsy
 ant suite.build-zip
-cd -
+cd .. 
 
 
 rm -rf autopsy-package/opt/autopsy
-mkdir -p  autopsy-package/opt/autopsy
-unzip Autopsy/dist/autopsy.zip -d autopsy-package/opt/autopsy
+mkdir -p autopsy-package/opt/
+mkdir -p autopsy-package/var/hashsets
+unzip Autopsy/dist/autopsy.zip -d autopsy-package/opt/
+sed -i 's/Xmx64m/Xmx6G/g'  autopsy-package/opt/autopsy/etc/autopsy.conf 
+
+mkdir -p autopsy-package/tmp
+cp sleuthkit/tsk/.libs/libtsk.so.13.0.0 autopsy-package/tmp
+
+
+
+rm autopsy-package/opt/dislocker.tar
+tar -cf autopsy-package/opt/dislocker.tar dislocker
 
 dpkg-deb -b autopsy-package
 

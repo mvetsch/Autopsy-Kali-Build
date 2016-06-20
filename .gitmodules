@@ -13,3 +13,6 @@
 [submodule "Autopsy-AuthentiCodeVerification"]
 	path = Autopsy-AuthentiCodeVerification
 	url = git@github.com:mvetsch/Autopsy-AuthentiCodeVerification
+[submodule "dislocker"]
+	path = dislocker
+	url = git@github.com:Aorimn/dislocker

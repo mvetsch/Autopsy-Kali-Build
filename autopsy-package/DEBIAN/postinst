@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ln -s /opt/autopsy/bin/autopsy /usr/bin/autopsy4
+
+cp /tmp/libtsk.so.13.0.0 /usr/lib/x86_64-linux-gnu
+ln -s /usr/lib/x86_64-linux-gnu/libtsk.so.13.0.0 /usr/lib/x86_64-linux-gnu/libtsk.so.13
+cd /opt
+
+tar -xf /opt/dislocker.tar
+cd dislocker
+cmake .
+make
+make install
+cd -
+rm dislocker.tar
+rm -rf dislocker
